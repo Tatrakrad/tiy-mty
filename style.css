@@ -48,3 +48,22 @@ table {
 }
 
 /* END OF RESET */
+
+#page{
+  position: relative;
+  height:100%;
+  width:100%;
+}
+
+#header{
+  background: url(./pattern-dark.png)top left #141414;
+  min-height:250px;
+  /*height of whole page in %?*/
+  overflow: auto;
+}
+
+.test{
+  text-align: center;
+  float:left;
+  color:white;
+}
