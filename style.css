@@ -70,7 +70,7 @@ table {
   text-align: left;
   color:white;
   margin:0 auto;
-	max-width:680px;
+	max-width:620px;
 	line-height: 1.25;
 }
 .title h3{
@@ -89,6 +89,11 @@ table {
 .promo .example{
 	color:plum;
 	border-bottom: 3px dashed plum;
+}
+
+.join-us{
+	margin:65px 0 0 0;
+	font-size:1.25em;
 }
 
  h1{
