@@ -53,17 +53,51 @@ table {
   position: relative;
   height:100%;
   width:100%;
+	margin:0 auto;
+	font-family:'Helvetica','Tahoma',sans-serif;
 }
 
 #header{
   background: url(./pattern-dark.png)top left #141414;
   min-height:250px;
   /*height of whole page in %?*/
-  overflow: auto;
+  padding: 50px 0 80px 0;
+	margin:0 auto;
+
 }
 
-.test{
-  text-align: center;
-  float:left;
+.title{
+  text-align: left;
   color:white;
+  margin:0 auto;
+	max-width:680px;
+	line-height: 1.25;
+}
+.title h3{
+	color:plum;
+}
+
+.title h2{
+	font-family: ‘Palatino Linotype’,'Book Antiqua', monospace;
+}
+
+.promo{
+	padding:2.5em 0 0 0;
+	line-height: normal;
+}
+
+.promo .example{
+	color:plum;
+	border-bottom: 3px dashed plum;
+}
+
+ h1{
+  font-size: 3em;
+	font-weight: 700;
+}
+h2{
+  font-size: 2.5em;
+}
+h3{
+	font-size:2em;
 }
