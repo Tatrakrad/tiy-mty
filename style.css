@@ -66,6 +66,47 @@ table {
 
 }
 
+#instructors{
+	font-size: 15px;
+	line-height: 21px;
+	margin:77px auto 0 auto;
+}
+
+#instructors h3{
+	text-align: center;
+	display: block;
+	margin: 0 auto 33px auto;
+}
+
+#instructors ul{
+	overflow: auto;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: 50%;
+	/*width 640?*/
+}
+
+#instructors ul li{
+	float: left;
+	width: 190px;
+	margin-right: 20px;
+	color: #9c9c9c;
+}
+#instructors img{
+	height:130px;
+}
+
+#marketing{
+
+}
+#logos{
+
+}
+#footer{
+
+}
+
 .title{
   text-align: left;
   color:white;
@@ -95,8 +136,38 @@ table {
 	margin:65px 0 0 0;
 	font-size:1.25em;
 }
+/*find out why field and button wont stay at same height/vertical align*/
+form{
+	text-align: center;
+	margin: 0 auto;
+	padding:32px 0 0 0;
+	clear:both;
+	overflow: auto;
+	width:100%;
+}
+form input{
+	float:left;
+	border-radius: 3px;
+	margin:auto 1%;
+	vertical-align: middle;
+	font-size: 20px;
+	height:65px;
+}
+input[type="email"]{
+	width: 55%;
+  color: #b2b2b2;
+}
+input[type="submit"]{
+	width:28%;
+	background: #ae5cc8;
+	color:white;
+}
 
- h1{
+strong,em{
+	font-weight: bolder;
+}
+
+h1{
   font-size: 3em;
 	font-weight: 700;
 }
