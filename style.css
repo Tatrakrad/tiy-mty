@@ -73,7 +73,8 @@ table {
 }
 
 #instructors h3{
-	text-align: center;
+	text-align: left;
+	text-indent: 20%;
 	display: block;
 	margin: 0 auto 33px auto;
 }
@@ -83,8 +84,8 @@ table {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	width: 50%;
-	/*width 640?*/
+	width: 640px;
+	/*width 640px or 50%?*/
 }
 
 #instructors ul li{
@@ -97,8 +98,22 @@ table {
 	height:130px;
 }
 
-#marketing{
+#instructors em{
+	display: block;
+	margin: 11px 0 4px 0;
+	font-size: 19px;
+	font-weight: lighter;
+}
 
+#marketing{
+	clear: both;
+	padding-top: 89px;
+	width: 960px;
+	margin: 0 auto;
+}
+#marketing h3{
+	text-align: center;
+	font-size:22px;
 }
 #logos{
 
@@ -165,7 +180,9 @@ input[type="submit"]{
 
 strong,em{
 	font-weight: bolder;
+	color:black;
 }
+
 
 h1{
   font-size: 3em;
