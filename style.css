@@ -103,6 +103,7 @@ table {
 	margin: 11px 0 4px 0;
 	font-size: 19px;
 	font-weight: lighter;
+	color:black;
 }
 
 #marketing{
@@ -128,10 +129,19 @@ table {
 }
 
 #logos{
-
+	clear:both;
+	width:640px;
+	margin:100px auto 0 auto;
+	overflow: auto;
+}
+#logos ul li{
+	float:left;
+  width: 206px;
 }
 #footer{
-
+	clear:both;
+	width:640px;
+	margin:0 auto;
 }
 
 .title{
@@ -162,6 +172,15 @@ table {
 .join-us{
 	margin:65px 0 0 0;
 	font-size:1.25em;
+	line-height: 1.5;
+
+}
+
+.madeby{
+	margin-top: 97px;
+	margin-bottom: 55px;
+	font-size: 15px;
+  opacity: .44;
 }
 /*find out why field and button wont stay at same height/vertical align*/
 form{
@@ -192,7 +211,7 @@ input[type="submit"]{
 
 strong,em{
 	font-weight: bolder;
-	color:black;
+
 }
 
 
