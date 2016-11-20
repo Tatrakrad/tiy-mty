@@ -49,12 +49,15 @@ table {
 
 /* END OF RESET */
 
+/*fonts: Karla */
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 #page{
   position: relative;
   height:100%;
   width:100%;
 	margin:0 auto;
-	font-family:'Helvetica','Tahoma',sans-serif;
+	font-family:'Karla','Helvetica','Tahoma',sans-serif;
 }
 
 #header{
@@ -154,13 +157,21 @@ table {
 .title h3{
 	color:plum;
 }
-
 .title h2{
 	font-family: ‘Palatino Linotype’,'Book Antiqua', monospace;
 }
+.title img{
+	display: block;
+	width:110px;
+}
+.title img.mty {
+	padding: 23px 0 0 0;
+	width:285px;
+	height:26px;
+}
 
 .promo{
-	padding:2.5em 0 0 0;
+	padding:3.1em 0 0 0;
 	line-height: normal;
 }
 
@@ -198,6 +209,7 @@ form input{
 	vertical-align: middle;
 	font-size: 20px;
 	height:65px;
+	background: #E6E6E6;
 }
 input[type="email"]{
 	width: 55%;
@@ -216,7 +228,7 @@ strong,em{
 
 
 h1{
-  font-size: 3em;
+  font-size: 2.8em;
 	font-weight: 700;
 }
 h2{
