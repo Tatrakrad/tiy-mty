@@ -79,7 +79,7 @@ table {
 #instructors h3{
 
 	text-align: left;
-	text-indent: 21%;
+	text-indent: 28%;
 	display: block;
 	margin: 0 auto 33px auto;
 	font-size: 22px;
@@ -132,8 +132,11 @@ table {
 }
 
 #marketing a {
-  color: #999;
-  text-decoration: none;
+	color:#999;
+	text-decoration: underline;
+}
+#marketing a:hover{
+	color:#5f5f5f;
 }
 
 #logos{
@@ -271,6 +274,9 @@ h3{
 	li{
 		width:100%;
 		margin:0 30%;
+	}
+	#header{
+		max-width: 100%;
 	}
 	#instructors{
 		text-indent: inherit;
