@@ -218,13 +218,25 @@ form input{
 	background: #E6E6E6;
 }
 input[type="email"]{
-	width: 55%;
+	width: 60%;
   color: #b2b2b2;
+	margin-right: 16px;
+}
+input[type="email"]:focus{
+
+  background: #ffffff;
 }
 input[type="submit"]{
-	width:28%;
+	width:32%;
+	padding:20px;
 	background: #ae5cc8;
 	color:white;
+  cursor: pointer;
+  transition: all .15s;
+
+}
+input[type="submit"]:hover{
+	background: #841b7b;
 }
 
 strong,em{
