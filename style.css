@@ -254,6 +254,15 @@ h3{
 		overflow:auto;
 		clear:both;
 		margin:0 auto;
+		max-width: 100%;
+	}
+	li{
+		width:100%;
+		margin:0 30%;
+	}
+	#instructors{
+		text-indent: inherit;
+		width:100%
 	}
 	#marketing{
 		margin:0;
