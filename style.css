@@ -208,6 +208,7 @@ form{
 	width:100%;
 }
 form input{
+	border:none;
 	float:left;
 	border-radius: 3px;
 	margin:auto 1%;
@@ -243,10 +244,26 @@ h3{
 	font-weight: bolder;
 }
 
-@media(max-width:640px){
+@media screen and (max-width:720px){
+	body{
+		text-align: center;
+	}
 	ul,li,img{
+		text-align: center;
 		float:none;
 		overflow:auto;
 		clear:both;
+		margin:0 auto;
+	}
+	#marketing{
+		margin:0;
+		overflow:auto;
+		max-width: 100%;
+	}
+	#logos{
+		max-width: 100%;
+	}
+	#footer{
+		max-width: 100%;
 	}
 }
