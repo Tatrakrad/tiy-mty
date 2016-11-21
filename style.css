@@ -121,9 +121,11 @@ table {
 	font-size:22px;
 }
 #marketing p {
+	font-family: 'Karla', Helvetica, sans-serif;
   margin: 28px 0;
   font-size: 19px;
   line-height: 28px;
+	font-weight: 200;
 }
 
 #marketing a {
