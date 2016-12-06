@@ -10,7 +10,7 @@
 }
 
 #header{
-  background: url(./pattern-dark.png)top left #141414;
+  background: url(./pattern-dark.png)top left $headerdark;
   min-height:250px;
   /*height of whole page in %?*/
   padding: 50px 0 80px 0;
@@ -48,7 +48,7 @@
 		float: left;
 		min-width: 190px;
 		margin-right: 20px;
-		color: #9c9c9c;
+		color: $li-color;
 	}
   img{
 		max-height:130px;
@@ -86,7 +86,7 @@
 		text-decoration: underline;
 	}
   a:hover{
-		color:#5f5f5f;
+		color:$link-hover;
 	}
 }
 
@@ -115,7 +115,7 @@
 }
 .title{
 	h3{
-		color:plum;
+		color:$mty-pink;
 	}
 	h2{
 		font-family:$title-text
@@ -137,8 +137,8 @@
 }
 
 .promo .example{
-	color:plum;
-	border-bottom: 3px dashed plum;
+	color:$mty-pink;
+	border-bottom: 3px dashed $mty-pink;
 }
 
 .join-us{
