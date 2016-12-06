@@ -1,35 +1,81 @@
 @media screen and (max-width:720px){
-	body{
-		text-align: center;
-	}
-	ul,li,img{
-		text-align: center;
-		float:none;
-		overflow:auto;
-		clear:both;
-		margin:0 auto;
-		max-width: 100%;
-	}
-	li{
-		width:100%;
-		margin:0 30%;
-	}
-	#header{
-		max-width: 100%;
-	}
-	#instructors{
-		text-indent: inherit;
-		width:100%
-	}
-	#marketing{
-		margin:0;
-		overflow:auto;
-		max-width: 100%;
-	}
-	#logos{
-		max-width: 100%;
-	}
-	#footer{
-		max-width: 100%;
-	}
-}
+  	body{
+  		text-align: center;
+  	}
+  	form input{
+  		clear:both;
+  		margin: 0 auto;
+  		max-width: 100%
+  	}
+  	input[type="submit"],input[type="email"]{
+  		min-width: 90%;
+  		margin:0.33em auto;
+  	}
+  	#header{
+  		max-width: 100%;
+  		padding:1.5em;
+  	}
+  	#instructors h3{
+  		text-indent:0;
+  		margin-left: 2em;
+  	}
+  	#instructors ul{
+  		max-width: 100%;
+  		margin: 0 auto;
+  		clear: both;
+
+  	}
+  	#instructors div{
+  		display: inline-block;
+  		max-width: 40%;
+  		margin: 0 5%;
+  	}
+  	#instructors div img{
+  		max-width: 100%;
+  		overflow: auto;
+  	}
+  	#instructors ul{
+  		margin: 0 auto;
+  		overflow: auto;
+  	}
+  	#instructors ul li{
+  		display: inline-block;
+  		min-width: 90%;
+  		float: none;
+  		margin:0 5%;
+  		clear: both;
+  	}
+  	#instructors p{
+  		max-width: 50%;
+  		float:right;
+  		overflow: auto;
+  		vertical-align: center;
+  		text-align: left;
+  	}
+  	#marketing{
+  		margin: 0 auto;
+  		overflow: auto;
+  		max-width: 90%;
+  	}
+  	#logos{
+  		max-width: 90%;
+  		clear:both;
+  		margin: 10% auto 0 auto;
+  	}
+  	/*why does the #instructors img,li clear apply here???*/
+  	#logos li{
+  		max-width: 20%;
+  		float: left;
+  		margin:0 5%;
+  		clear:none;
+  	}
+  	#logos img{
+  		max-width: 100%;
+  	}
+  	#footer{
+  		clear: both;
+  		max-width: 90%;
+  		margin:0 auto;
+  		padding:1.5em;
+  	}
+  }

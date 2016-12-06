@@ -74,6 +74,8 @@ table {
     display: block;
     margin: 0 auto 33px auto;
     font-size: 22px; }
+  #instructors li {
+    max-width: 30%; }
   #instructors ul {
     overflow: auto;
     display: block;
@@ -83,11 +85,11 @@ table {
     /*width 640px or 50%?*/ }
   #instructors ul li {
     float: left;
-    width: 190px;
+    min-width: 190px;
     margin-right: 20px;
     color: #9c9c9c; }
   #instructors img {
-    height: 130px; }
+    max-height: 130px; }
   #instructors em {
     display: block;
     margin: 11px 0 4px 0;
@@ -117,7 +119,7 @@ table {
 
 #logos {
   clear: both;
-  width: 640px;
+  max-width: 640px;
   margin: 100px auto 0 auto;
   overflow: auto; }
 
@@ -127,7 +129,7 @@ table {
 
 #footer {
   clear: both;
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto; }
 
 .title {
@@ -191,9 +193,10 @@ form input {
   background: #E6E6E6; }
 
 input[type="email"] {
-  width: 60%;
+  min-width: 60%;
   color: #b2b2b2;
-  margin-right: 16px; }
+  margin-right: 16px;
+  text-indent: 5%; }
 
 input[type="email"]:focus {
   background: #ffffff; }
@@ -204,7 +207,7 @@ input[type="submit"] {
   background: #ae5cc8;
   color: white;
   cursor: pointer;
-  transition: all .15s; }
+  transition: all .15s ease; }
 
 input[type="submit"]:hover {
   background: #841b7b; }
@@ -226,26 +229,63 @@ h3 {
 @media screen and (max-width: 720px) {
   body {
     text-align: center; }
-  ul, li, img {
-    text-align: center;
-    float: none;
-    overflow: auto;
+  form input {
     clear: both;
     margin: 0 auto;
     max-width: 100%; }
-  li {
-    width: 100%;
-    margin: 0 30%; }
+  input[type="submit"], input[type="email"] {
+    min-width: 90%;
+    margin: 0.33em auto; }
   #header {
-    max-width: 100%; }
-  #instructors {
-    text-indent: inherit;
-    width: 100%; }
-  #marketing {
-    margin: 0;
+    max-width: 100%;
+    padding: 1.5em; }
+  #instructors h3 {
+    text-indent: 0;
+    margin-left: 2em; }
+  #instructors ul {
+    max-width: 100%;
+    margin: 0 auto;
+    clear: both; }
+  #instructors div {
+    display: inline-block;
+    max-width: 40%;
+    margin: 0 5%; }
+  #instructors div img {
+    max-width: 100%;
+    overflow: auto; }
+  #instructors ul {
+    margin: 0 auto;
+    overflow: auto; }
+  #instructors ul li {
+    display: inline-block;
+    min-width: 90%;
+    float: none;
+    margin: 0 5%;
+    clear: both; }
+  #instructors p {
+    max-width: 50%;
+    float: right;
     overflow: auto;
-    max-width: 100%; }
+    vertical-align: center;
+    text-align: left; }
+  #marketing {
+    margin: 0 auto;
+    overflow: auto;
+    max-width: 90%; }
   #logos {
+    max-width: 90%;
+    clear: both;
+    margin: 10% auto 0 auto; }
+  /*why does the #instructors img,li clear apply here???*/
+  #logos li {
+    max-width: 20%;
+    float: left;
+    margin: 0 5%;
+    clear: none; }
+  #logos img {
     max-width: 100%; }
   #footer {
-    max-width: 100%; } }
+    clear: both;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.5em; } }

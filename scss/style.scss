@@ -31,6 +31,9 @@
 		margin: 0 auto 33px auto;
 		font-size: 22px;
 	}
+	li{
+		max-width: 30%;
+	}
 
   ul{
 		overflow: auto;
@@ -43,12 +46,12 @@
 
   ul li{
 		float: left;
-		width: 190px;
+		min-width: 190px;
 		margin-right: 20px;
 		color: #9c9c9c;
 	}
   img{
-		height:130px;
+		max-height:130px;
 	}
 
   em{
@@ -89,7 +92,7 @@
 
 #logos{
 	clear:both;
-	width:640px;
+	max-width:640px;
 	margin:100px auto 0 auto;
 	overflow: auto;
 }
@@ -99,7 +102,7 @@
 }
 #footer{
 	clear:both;
-	width:640px;
+	max-width:640px;
 	margin:0 auto;
 }
 
@@ -171,9 +174,10 @@ form input{
 	background: #E6E6E6;
 }
 input[type="email"]{
-	width: 60%;
+	min-width: 60%;
   color: #b2b2b2;
 	margin-right: 16px;
+	text-indent:5%;
 }
 input[type="email"]:focus{
 
@@ -185,7 +189,7 @@ input[type="submit"]{
 	background: #ae5cc8;
 	color:white;
   cursor: pointer;
-  transition: all .15s;
+  transition:all .15s ease;
 
 }
 input[type="submit"]:hover{
