@@ -1,8 +1,10 @@
+@charset "UTF-8";
+/*fonts: Karla */
+@import url("https://fonts.googleapis.com/css?family=Karla");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,281 +18,234 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* END OF RESET */
-
-/*fonts: Karla */
-@import url('https://fonts.googleapis.com/css?family=Karla');
-
-#page{
+#page {
   position: relative;
-  height:100%;
-  width:100%;
-	margin:0 auto;
-	font-family:'Karla','Helvetica','Tahoma',sans-serif;
-}
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Karla", "Helvetica", "Tahoma", sans-serif; }
 
-#header{
-  background: url(./pattern-dark.png)top left #141414;
-  min-height:250px;
+#header {
+  background: url(./pattern-dark.png) top left #141414;
+  min-height: 250px;
   /*height of whole page in %?*/
   padding: 50px 0 80px 0;
-	margin:0 auto;
+  margin: 0 auto; }
 
-}
+#instructors {
+  font-family: "Karla", "Helvetica", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 77px auto 0 auto; }
+  #instructors h3 {
+    text-align: left;
+    text-indent: 28%;
+    display: block;
+    margin: 0 auto 33px auto;
+    font-size: 22px; }
+  #instructors ul {
+    overflow: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    /*width 640px or 50%?*/ }
+  #instructors ul li {
+    float: left;
+    width: 190px;
+    margin-right: 20px;
+    color: #9c9c9c; }
+  #instructors img {
+    height: 130px; }
+  #instructors em {
+    display: block;
+    margin: 11px 0 4px 0;
+    font-size: 19px;
+    font-weight: lighter;
+    color: black; }
 
-#instructors{
-	font-family: 'Karla', 'Helvetica',sans-serif;
-	font-size: 15px;
-	line-height: 21px;
-	margin:77px auto 0 auto;
-}
+#marketing {
+  font-family: "Karla", "Helvetica", "Tahoma", sans-serif;
+  clear: both;
+  padding-top: 89px;
+  width: 640px;
+  margin: 0 auto; }
+  #marketing h3 {
+    text-align: center;
+    font-size: 22px; }
+  #marketing p {
+    margin: 28px 0;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 200; }
+  #marketing a {
+    color: #999;
+    text-decoration: underline; }
+  #marketing a:hover {
+    color: #5f5f5f; }
 
-#instructors h3{
+#logos {
+  clear: both;
+  width: 640px;
+  margin: 100px auto 0 auto;
+  overflow: auto; }
 
-	text-align: left;
-	text-indent: 28%;
-	display: block;
-	margin: 0 auto 33px auto;
-	font-size: 22px;
-}
+#logos ul li {
+  float: left;
+  width: 206px; }
 
-#instructors ul{
-	overflow: auto;
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	width: 640px;
-	/*width 640px or 50%?*/
-}
+#footer {
+  clear: both;
+  width: 640px;
+  margin: 0 auto; }
 
-#instructors ul li{
-	float: left;
-	width: 190px;
-	margin-right: 20px;
-	color: #9c9c9c;
-}
-#instructors img{
-	height:130px;
-}
-
-#instructors em{
-	display: block;
-	margin: 11px 0 4px 0;
-	font-size: 19px;
-	font-weight: lighter;
-	color:black;
-}
-
-#marketing{
-	font-family: 'Karla', 'Helvetica',sans-serif;
-	clear: both;
-	padding-top: 89px;
-	width: 640px;
-	margin: 0 auto;
-}
-
-#marketing h3{
-	text-align: center;
-	font-size:22px;
-}
-#marketing p {
-  margin: 28px 0;
-  font-size: 19px;
-  line-height: 28px;
-	font-weight: 200;
-}
-
-#marketing a {
-	color:#999;
-	text-decoration: underline;
-}
-#marketing a:hover{
-	color:#5f5f5f;
-}
-
-#logos{
-	clear:both;
-	width:640px;
-	margin:100px auto 0 auto;
-	overflow: auto;
-}
-#logos ul li{
-	float:left;
-  width: 206px;
-}
-#footer{
-	clear:both;
-	width:640px;
-	margin:0 auto;
-}
-
-.title{
+.title {
   text-align: left;
-  color:white;
-  margin:0 auto;
-	max-width:620px;
-	line-height: 1.25;
-}
-.title h3{
-	color:plum;
-}
-.title h2{
-	font-family: ‘Palatino Linotype’,'Book Antiqua', monospace;
-}
-.title img{
-	display: block;
-	width:110px;
-}
+  color: white;
+  margin: 0 auto;
+  max-width: 620px;
+  line-height: 1.25; }
+
+.title h3 {
+  color: plum; }
+
+.title h2 {
+  font-family: ‘Palatino Linotype’, "Book Antiqua", monospace; }
+
+.title img {
+  display: block;
+  width: 110px; }
+
 .title img.mty {
-	padding: 23px 0 0 0;
-	width:285px;
-	height:26px;
-}
+  padding: 23px 0 0 0;
+  width: 285px;
+  height: 26px; }
 
-.promo{
-	padding:3.1em 0 0 0;
-	line-height: normal;
-}
+.promo {
+  padding: 3.1em 0 0 0;
+  line-height: normal; }
 
-.promo .example{
-	color:plum;
-	border-bottom: 3px dashed plum;
-}
+.promo .example {
+  color: plum;
+  border-bottom: 3px dashed plum; }
 
-.join-us{
-	margin:65px 0 0 0;
-	font-size:1.25em;
-	line-height: 1.5;
+.join-us {
+  margin: 65px 0 0 0;
+  font-size: 1.25em;
+  line-height: 1.5; }
 
-}
+.madeby {
+  margin-top: 97px;
+  margin-bottom: 55px;
+  font-size: 15px;
+  opacity: .44; }
 
-.madeby{
-	margin-top: 97px;
-	margin-bottom: 55px;
-	font-size: 15px;
-  opacity: .44;
-}
 /*find out why field and button wont stay at same height/vertical align*/
-form{
-	text-align: center;
-	margin: 0 auto;
-	padding:32px 0 0 0;
-	clear:both;
-	overflow: auto;
-	width:100%;
-}
-form input{
-	border:none;
-	float:left;
-	border-radius: 3px;
-	margin:auto 1%;
-	vertical-align: middle;
-	font-size: 20px;
-	height:65px;
-	background: #E6E6E6;
-}
-input[type="email"]{
-	width: 60%;
+form {
+  text-align: center;
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+  clear: both;
+  overflow: auto;
+  width: 100%; }
+
+form input {
+  border: none;
+  float: left;
+  border-radius: 3px;
+  margin: auto 1%;
+  vertical-align: middle;
+  font-size: 20px;
+  height: 65px;
+  background: #E6E6E6; }
+
+input[type="email"] {
+  width: 60%;
   color: #b2b2b2;
-	margin-right: 16px;
-}
-input[type="email"]:focus{
+  margin-right: 16px; }
 
-  background: #ffffff;
-}
-input[type="submit"]{
-	width:32%;
-	padding:20px;
-	background: #ae5cc8;
-	color:white;
+input[type="email"]:focus {
+  background: #ffffff; }
+
+input[type="submit"] {
+  width: 32%;
+  padding: 20px;
+  background: #ae5cc8;
+  color: white;
   cursor: pointer;
-  transition: all .15s;
+  transition: all .15s; }
 
-}
-input[type="submit"]:hover{
-	background: #841b7b;
-}
+input[type="submit"]:hover {
+  background: #841b7b; }
 
-strong,em{
-	font-weight: bolder;
+strong, em {
+  font-weight: bolder; }
 
-}
-
-h1{
+h1 {
   font-size: 2.8em;
-	font-weight: 700;
-}
-h2{
-  font-size: 2.5em;
-}
-h3{
-	font-size:1.8em;
-	font-weight: bolder;
-}
+  font-weight: 700; }
 
-@media screen and (max-width:720px){
-	body{
-		text-align: center;
-	}
-	ul,li,img{
-		text-align: center;
-		float:none;
-		overflow:auto;
-		clear:both;
-		margin:0 auto;
-		max-width: 100%;
-	}
-	li{
-		width:100%;
-		margin:0 30%;
-	}
-	#header{
-		max-width: 100%;
-	}
-	#instructors{
-		text-indent: inherit;
-		width:100%
-	}
-	#marketing{
-		margin:0;
-		overflow:auto;
-		max-width: 100%;
-	}
-	#logos{
-		max-width: 100%;
-	}
-	#footer{
-		max-width: 100%;
-	}
-}
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.8em;
+  font-weight: bolder; }
+
+@media screen and (max-width: 720px) {
+  body {
+    text-align: center; }
+  ul, li, img {
+    text-align: center;
+    float: none;
+    overflow: auto;
+    clear: both;
+    margin: 0 auto;
+    max-width: 100%; }
+  li {
+    width: 100%;
+    margin: 0 30%; }
+  #header {
+    max-width: 100%; }
+  #instructors {
+    text-indent: inherit;
+    width: 100%; }
+  #marketing {
+    margin: 0;
+    overflow: auto;
+    max-width: 100%; }
+  #logos {
+    max-width: 100%; }
+  #footer {
+    max-width: 100%; } }
