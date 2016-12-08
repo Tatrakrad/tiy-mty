@@ -156,7 +156,8 @@ table {
 
 .promo {
   padding: 3.1em 0 0 0;
-  line-height: normal; }
+  line-height: normal;
+  transition: all .03s ease; }
 
 .promo .example {
   color: plum;

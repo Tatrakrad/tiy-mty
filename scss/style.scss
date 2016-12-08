@@ -134,6 +134,7 @@
 .promo{
 	padding:3.1em 0 0 0;
 	line-height: normal;
+  transition: all .03s ease
 }
 
 .promo .example{
@@ -186,7 +187,7 @@ input[type="email"]:focus{
 input[type="submit"]{
 	width:32%;
 	padding:20px;
-	background: #ae5cc8;
+	background: $input-bg;
 	color:white;
   cursor: pointer;
   transition:all .15s ease;
