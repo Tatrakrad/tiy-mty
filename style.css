@@ -164,6 +164,14 @@ table {
   color: plum;
   border-bottom: 3px dashed plum; }
 
+.cursor {
+  color: plum;
+  animation: blink 1s infinite; }
+
+@keyframes blink {
+  to {
+    opacity: .0; } }
+
 .join-us {
   margin: 65px 0 0 0;
   font-size: 1.25em;
