@@ -14,40 +14,44 @@
   //animation speeds
   var timeoutForSwitch = 1300;
   var animatorSpeed = 150;
-  var left = false;
   var animTyping;
+  var animUntyping;
 
   //start the reactor
   setAnimatedPhrase();
 
   function animateString(aString,location){
-    left = false;
-    console.log('animate a string',aString);
     //clear
     location.textContent = "";
     //
     var i = 0;
 
     animTyping = setInterval(function(){
-        //for decrement use slice
-        console.log("index",i,aString.charAt(i));
-        if (!left && i<aString.length){
+        if (i<aString.length){
           location.textContent += aString.charAt(i);
           i++;
-        }
-        else {
-          left = true;
-        }
-        if (left && i>=0){
-          location.textContent = aString.slice(0,i);
-          i--;
-        }
-        if(i<0 && left){
+        }else{
           clearInterval(animTyping);
-          setTimeout(setAnimatedPhrase,timeoutForSwitch);
+          setTimeout(function(){reverseAnimateString(aString,location);},timeoutForSwitch);
         }
 
     },animatorSpeed);
+  }
+  function reverseAnimateString(aString,location){
+    var i=aString.length;
+
+    animUntyping = setInterval(function(){
+
+      if (i>=0){
+        location.textContent = aString.slice(0,i);
+        i--;
+      }else{
+        clearInterval(animUntyping);
+        setTimeout(setAnimatedPhrase,timeoutForSwitch);
+      }
+
+    },animatorSpeed);
+
   }
 
   function setAnimatedPhrase(){
