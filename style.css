@@ -61,7 +61,8 @@ table {
   min-height: 250px;
   /*height of whole page in %?*/
   padding: 50px 0 80px 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: all .255s ease; }
 
 #instructors {
   font-family: "Karla", "Helvetica", "Tahoma", sans-serif;

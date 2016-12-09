@@ -12,8 +12,8 @@
   var selectMax = sampleStrings.length;
 
   //animation speeds
-  var timeoutForSwitch = 1300;
-  var animatorSpeed = 150;
+  var timeoutForSwitch = 2250;
+  var animatorSpeed = 100;
   var animTyping;
   var animUntyping;
 
