@@ -12,25 +12,41 @@
   var selectMax = sampleStrings.length;
 
   //animation speeds
-  var timeoutForSwitch = 2000;
+  var timeoutForSwitch = 1300;
   var animatorSpeed = 150;
+  var left = false;
+  var animTyping;
 
   //start the reactor
   setAnimatedPhrase();
 
   function animateString(aString,location){
+    left = false;
     console.log('animate a string',aString);
     //clear
     location.textContent = "";
     //
     var i = 0;
-    var animTyping = setInterval(function(){
-      location.textContent += aString.charAt(i);
-      i++;
-      if (i>aString.length){
-        clearInterval(animTyping);
-        setTimeout(setAnimatedPhrase,timeoutForSwitch);
-      }
+
+    animTyping = setInterval(function(){
+        //for decrement use slice
+        console.log("index",i,aString.charAt(i));
+        if (!left && i<aString.length){
+          location.textContent += aString.charAt(i);
+          i++;
+        }
+        else {
+          left = true;
+        }
+        if (left && i>=0){
+          location.textContent = aString.slice(0,i);
+          i--;
+        }
+        if(i<0 && left){
+          clearInterval(animTyping);
+          setTimeout(setAnimatedPhrase,timeoutForSwitch);
+        }
+
     },animatorSpeed);
   }
 
